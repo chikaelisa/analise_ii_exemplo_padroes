@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Theme, themeManager } from '../../ThemeManager';
-
+import { useEffect, useState } from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { Theme, themeManager } from "../../ThemeManager";
 
 export const ThemedBox: React.FC = () => {
   const [theme, setTheme] = useState<Theme>(themeManager.getTheme());
@@ -32,13 +31,13 @@ const createStyles = (theme: Theme) =>
     box: {
       padding: 20,
       borderRadius: 10,
-      backgroundColor: theme === 'light' ? '#eee' : '#333',
-      alignItems: 'center',
+      backgroundColor: theme === "light" ? "#eee" : "#333",
+      alignItems: "center",
       height: 100,
-      justifyContent: 'center',
+      justifyContent: "center",
     },
     text: {
-      color: theme === 'light' ? '#000' : '#fff',
+      color: theme === "light" ? "#000" : "#fff",
       fontSize: 16,
     },
   });

@@ -21,7 +21,7 @@ class ThemeManager {
 
   public toggleTheme(): void {
     this.theme = this.theme === 'light' ? 'dark' : 'light';
-    this.notifyObservers();
+   this.notifyObservers();
   }
 
   public subscribe(observer: Observer): void {
@@ -39,4 +39,3 @@ class ThemeManager {
 
 // Exporta uma única instância (Singleton)
 export const themeManager = ThemeManager.getInstance();
-
